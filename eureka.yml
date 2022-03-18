@@ -1,0 +1,13 @@
+server:
+  port: 8762
+
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+
+  server:
+    enableSelfPreservation: true
+    renewalPercentThreshold: 0.33
